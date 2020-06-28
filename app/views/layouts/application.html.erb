@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SchoolAutocomplete</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.0/jquery.typeahead.min.css'>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark bg-primary box-shadow">
+      <a class="navbar-brand" href="/">
+        School Management
+      </a>
+    </nav>
+    <div class='container'>
+      <%= yield %>
+    </div>
+  </body>
+</html>

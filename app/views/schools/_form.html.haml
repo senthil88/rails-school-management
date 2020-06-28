@@ -1,0 +1,40 @@
+.card.card-primary
+  .card-header
+    %h3.card-title Details
+  
+  .card-body
+    = form_for school do |f|
+      .row
+        .col-sm-12
+          .form-group
+            = f.label 'Name'
+            = f.text_field :name, class: "form-control", placeholder: 'Name'
+            = show_errors(school, :name)
+      .row
+        .col-sm-12
+          .form-group
+            = f.label 'Address'
+            = f.text_field :address, class: "form-control", placeholder: 'Address'
+            = show_errors(school, :address)
+
+      .row
+        .col-sm-6
+          .form-group
+            = f.label 'City'
+            = f.text_field :city, class: "form-control", placeholder: 'City'
+            = show_errors(school, :city)    
+        .col-sm-6
+          .form-group
+            = f.label 'State'
+            = f.text_field :state, class: "form-control", placeholder: 'State'
+            = show_errors(school, :state)
+      .row
+        .col-sm-6
+          .form-group
+            = f.label 'Country'
+            = f.text_field :country, class: "form-control", placeholder: 'Country'
+            = show_errors(school, :country)
+      
+      
+      .card-footer
+        = f.submit "Submit", class: 'btn btn-info'
