@@ -4,6 +4,9 @@
 
 Single application for school management.
 
+# Screenshot
+![alt text](https://raw.githubusercontent.com/senthil88/rails-school-management/master/public/screenshot.png)
+
 # Server & front end technologies
 
 * Ruby - 2.6.0
