@@ -1,0 +1,9 @@
+.git
+.gitignore
+.idea
+.byebug_history
+*.sql
+.byebug_history
+docker-compose*
+docker-*
+log/*
